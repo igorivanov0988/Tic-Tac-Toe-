@@ -56,6 +56,7 @@ function clickOnBoard() {
 
         $("#dial").dialog(
                 {modal:true},
+                {minWidth:400},
                 {title:"Игра окончена! " +
                     " Выиграл: " + player},
                 {buttons:{"Начать новую игру":function(){ $(this).dialog("close"); restart()}}},
