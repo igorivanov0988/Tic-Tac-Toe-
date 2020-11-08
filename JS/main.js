@@ -55,8 +55,7 @@ function clickOnBoard() {
     if(checkWinnings(data)) {
 
         $("#dial").dialog(
-                {modal:true},
-                {minWidth:400},
+                {modal:true, width:400},
                 {title:"Игра окончена! " +
                     " Выиграл: " + player},
                 {buttons:{"Начать новую игру":function(){ $(this).dialog("close"); restart()}}},
